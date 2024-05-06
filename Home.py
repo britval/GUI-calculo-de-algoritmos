@@ -19,7 +19,7 @@ class Sidebar(CTkFrame):
         self.pack_propagate(0)
         self.pack(fill="y", anchor="w", side="left")
 
-        logo_img_data = Image.open(r"C:\Users\corre\Downloads\Proyecto-CGV\logo.png")
+        logo_img_data = Image.open(r"C:\Users\corre\Downloads\Proyecto-CGV\images\logo.png")
         logo_img = CTkImage(dark_image=logo_img_data, light_image=logo_img_data, size=(77.68, 85.42))
 
         CTkLabel(master=self, text="", image=logo_img).pack(pady=(38, 0), anchor="center")
@@ -27,12 +27,12 @@ class Sidebar(CTkFrame):
 
         self.botones = []
         data_boton = [
-            {"text": "Presentacion", "image_path": r"C:\Users\corre\Downloads\Proyecto-CGV\analytics_icon.png"},
-            {"text": "DDA", "image_path": r"C:\Users\corre\Downloads\Proyecto-CGV\package_icon.png"},
-            {"text": "Bresenham", "image_path": r"C:\Users\corre\Downloads\Proyecto-CGV\list_icon.png"},
-            {"text": "Circunferencia", "image_path": r"C:\Users\corre\Downloads\Proyecto-CGV\returns_icon.png"},
-            {"text": "Elipse", "image_path": r"C:\Users\corre\Downloads\Proyecto-CGV\settings_icon.png"},
-            {"text": "Salir", "image_path": r"C:\Users\corre\Downloads\Proyecto-CGV\person_icon.png"}
+            {"text": "Presentacion", "image_path": r"C:\Users\corre\Downloads\Proyecto-CGV\images\analytics_icon.png"},
+            {"text": "DDA", "image_path": r"C:\Users\corre\Downloads\Proyecto-CGV\images\package_icon.png"},
+            {"text": "Bresenham", "image_path": r"C:\Users\corre\Downloads\Proyecto-CGV\images\list_icon.png"},
+            {"text": "Circunferencia", "image_path": r"C:\Users\corre\Downloads\Proyecto-CGV\images\returns_icon.png"},
+            {"text": "Elipse", "image_path": r"C:\Users\corre\Downloads\Proyecto-CGV\images\settings_icon.png"},
+            {"text": "Salir", "image_path": r"C:\Users\corre\Downloads\Proyecto-CGV\images\person_icon.png"}
         ]
 
         for info_boton in data_boton:
@@ -77,7 +77,7 @@ class Content(CTkFrame):
     
     # Contenido de Presentacion
     def show_welcome_content(self):
-        self.imagen_presentacion = Image.open("Portada.png")
+        self.imagen_presentacion = Image.open(r"C:\Users\corre\Downloads\Proyecto-CGV\images\Portada.png")
         self.imagen_presentacion.thumbnail((1000, 1600)) 
         self.label = CTkLabel(master=self, text="Presentacion", font=("Arial Black", 25), text_color="#2A8C55")
         self.label.pack(anchor="nw", pady=(29,0), padx=27)
