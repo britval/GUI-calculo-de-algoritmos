@@ -4,9 +4,22 @@
 Este proyecto fue desarrollado en equipo para la asignatura **"Computación Gráfica y Visual"**. Su objetivo principal es profundizar en los fundamentos teóricos de los algoritmos de discretización de líneas, círculos y elipses.
 
 
+## Librerias
 
-## Herramientas
-El proyecto se realizo en **Python** con un entorno visual este entorno se ultilizo la libreria **tkinter** esta se usa para crear interfaces gráficas de usuario (GUI). Es simple de usar, multiplataforma (funciona en Windows, macOS y Linux), y viene preinstalada con Python, por lo que no necesitas instalar paquetes adicionales.
+Para ejecutar este proyecto, es necesario configurar varias variables de entorno, las cuales son:
+
+`customtkinter`
+`tkinter`
+`PIL` 
+`os`
+
+A continuación, se proporcionan los enlaces a los sitios oficiales de las herramientas utilizadas, aunque también se mencionan brevemente en la documentación del código:
+
+- [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter)
+- [Tkinter](https://wiki.python.org/moin/TkInter)
+- [PIL (Pillow)](https://pillow.readthedocs.io/en/stable/)
+- [OS Module](https://docs.python.org/3/library/os.html)
+
 
 ## Algoritmos Utilizados 
 1. **Algoritmo DDA (Digital Differential Analyzer) para líneas**
